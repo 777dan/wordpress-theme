@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Clean Blog - Start Bootstrap Theme</title>
+        <title><?= get_bloginfo('name'); ?></title>
         <link rel="icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon.ico" />
         <?php wp_head(); ?>
     </head>
@@ -17,7 +17,7 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
                 <div class="container px-4 px-lg-5">
-                    <a class="navbar-brand" href="index.php">Start Bootstrap</a>
+                    <a class="navbar-brand" href="index.php"><?= get_bloginfo('name'); ?></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         Menu
                         <i class="fas fa-bars"></i>
@@ -46,8 +46,8 @@
                     <div class="row gx-4 gx-lg-5 justify-content-center">
                         <div class="col-md-10 col-lg-8 col-xl-7">
                             <div class="site-heading">
-                                <h1>Clean Blog</h1>
-                                <span class="subheading">A Blog Theme by Start Bootstrap</span>
+                                <h1><?= get_bloginfo('name'); ?></h1>
+                                <span class="subheading">A Blog Theme by D.S.N.</span>
                             </div>
                         </div>
                     </div>
